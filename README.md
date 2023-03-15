@@ -1,4 +1,4 @@
-# Nerfies
+# FlexNeRF
 
 This is the repository that contains source code for the [FlexNeRF website](https://flex-nerf.github.io).
 
