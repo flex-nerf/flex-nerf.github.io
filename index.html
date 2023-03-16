@@ -191,34 +191,30 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" style="margin-top:-20px">Abstract</h2>
+        <h2 class="title is-3" style="margin-top:-60px">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We present FlexNeRF, a method for photorealistic free-
+            viewpoint rendering of humans in motion from monocular
+            videos. Our approach works well with sparse views, which
+            is a challenging scenario when the subject is exhibiting
+            fast/complex motions.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We propose a novel approach which
+            jointly optimizes a canonical time and pose configuration,
+            with a pose-dependent motion field and pose-independent
+            temporal deformations complementing each other. Thanks
+            to our novel temporal and cyclic consistency constraints
+            along with additional losses on intermediate representation
+            such as segmentation, our approach provides high quality
+            outputs as the observed views become sparser.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We empiri-
+            cally demonstrate that our method significantly outperforms
+            the state-of-the-art on public benchmark datasets as well as
+            a self-captured fashion dataset.
           </p>
         </div>
       </div>
