@@ -259,7 +259,7 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
     <div class="columns is-centered">
       
       <!-- Visual Effects. -->
-      <div class="column">
+<!--       <div class="column">
         <div class="content">
           <h2 class="title is-4">ZJU-MoCap Dataset</h2>
           <p>
@@ -271,11 +271,11 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+<!--       <div class="column">
         <h2 class="title is-4">Self Captured Fashion (SCF) Dataset</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -291,14 +291,15 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
     
  <h3 class="title is-4">Re-rendering the input video</h3>
   <div class="content has-text-justified">
     <p>
-      Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-      viewpoint such as a stabilized camera by playing back the training deformations.
+      Using <span class="dnerf">Qualitative comparison of rendered novel views on the ZJU-MoCap and the Self Captured Fashion (SCF)dataset. 
+      Notice the higher quality of 
+      rendered images from our method on details such as faces, hands, buttons on shirt, etc.
     </p>
   </div>
   <div class="content has-text-centered">
@@ -308,7 +309,7 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
            muted
            playsinline
            width="75%">
-      <source src="./static/videos/ZJU-MoCap-Example_FreeViewPoint.mp4"
+      <source src="./static/videos/SCF-Example-FreeViewPoint.mp4"
               type="video/mp4">
     </video>
   </div>
@@ -319,18 +320,18 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
            muted
            playsinline
            width="75%">
-      <source src="./static/videos/SCF-Example-FreeViewPoint.mp4"
+      <source src="./static/videos/ZJU-MoCap-Example_FreeViewPoint.mp4"
               type="video/mp4">
     </video>
   </div>
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+<!--     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+<!--         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -360,11 +361,11 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
             <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+        <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+<!--         <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
@@ -381,11 +382,11 @@ scale as our experiments. † refers to the Self-Captured Fashion (SCF) dataset.
             <source src="./static/videos/replay.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+<!--       </div>
+    </div> -->
     <!--/ Animation. -->
 
 
