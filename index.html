@@ -519,32 +519,36 @@ our method on details such as faces, hands, buttons on shirt, etc.</span>
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">ZJU-MoCap Dataset</h2>
+          <h2 class="title is-4" style="margin-top:-50px">Analysis of Number of Views</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+              To further analyze the effect
+              of the number of views, we train various models using
+              different number of input views.
+              LPIPS metric comparison on ZJU-MoCap between HumanNeRF and our method with decreasing number of views.
+              Our approach is
+              better than HumanNeRF for all settings, with significant reduction
+              in LPIPS metric as the number of views decreases.
           </p>
-          <video id="mocap" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ZJU-MoCap-Example_FreeViewPoint.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/images/views_comp_flipped.png" style="width: 80%; max-height: auto">
         </div>
       </div>
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-4">Self Captured Fashion (SCF) Dataset</h2>
+        <h2 class="title is-4" style="margin-top:-50px">Self Captured Fashion (SCF) Dataset</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              To further analyze the effect
+              of the number of views, we train various models using
+              different number of input views.
+              LPIPS metric comparison on ZJU-MoCap between HumanNeRF and our method with decreasing number of views.
+              Our approach is
+              better than HumanNeRF for all settings, with significant reduction
+              in LPIPS metric as the number of views decreases.
             </p>
-            <video id="scf" autoplay controls playsinline height="100%">
-              <source src="./static/videos/SCF-Example-FreeViewPoint.mp4"
-                      type="video/mp4">
-            </video>
+            <img src="./static/images/views_comp_flipped.png" style="width: 80%; max-height: auto">
           </div>
 
         </div>
